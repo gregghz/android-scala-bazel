@@ -1,18 +1,20 @@
 # load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library")
 load("//rules:scala-android.bzl", "scala_android_library")
 
+supportLibraryVersion = "27.0.1".replace(".", "_")
+
 shared_deps = [
     "@android_arch_core_common_1_0_0//jar",
     "@android_arch_lifecycle_common_1_0_3//jar",
     "@android_arch_lifecycle_runtime_1_0_3//aar",
     "@android_arch_lifecycle_extensions_1_0_0//aar",
-    "@com_android_support_appcompat_v7_26_1_0//aar",
-    "@com_android_support_support_annotations_26_1_0//jar",
-    "@com_android_support_support_compat_26_1_0//aar",
-    "@com_android_support_support_core_ui_26_1_0//aar",
-    "@com_android_support_support_core_utils_26_1_0//aar",
-    "@com_android_support_support_fragment_26_1_0//aar",
-    "@com_android_support_support_vector_drawable_26_1_0//aar",
+    "@com_android_support_appcompat_v7_{}//aar".format(supportLibraryVersion),
+    "@com_android_support_support_annotations_{}//jar".format(supportLibraryVersion),
+    "@com_android_support_support_compat_{}//aar".format(supportLibraryVersion),
+    "@com_android_support_support_core_ui_{}//aar".format(supportLibraryVersion),
+    "@com_android_support_support_core_utils_{}//aar".format(supportLibraryVersion),
+    "@com_android_support_support_fragment_{}//aar".format(supportLibraryVersion),
+    "@com_android_support_support_vector_drawable_{}//aar".format(supportLibraryVersion),
 ]
 
 android_binary(

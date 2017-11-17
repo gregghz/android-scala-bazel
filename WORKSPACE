@@ -22,6 +22,6 @@ load("@bazel_tools//tools/build_defs/repo:maven_rules.bzl", "maven_aar")
 
 android_sdk_repository(
   name = "androidsdk",
-  api_level = 26,
-  build_tools_version = "26.0.1"
+  api_level = 27,
+  build_tools_version = "27.0.1"
 )
