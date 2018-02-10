@@ -21,7 +21,6 @@ android_binary(
     name = "app",
     custom_package = "com.gregghz.android.sample",
     srcs = glob(["src/main/java/**/*.java"]),
-    resource_files = glob(["src/main/res/**"]),
     manifest = "src/main/AndroidManifest.xml",
     deps = [
         ":app-lib",

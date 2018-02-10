@@ -13,3 +13,7 @@ This is a sample of how to build Android apps using the [Scala programming langu
 4. To install to a mobile device:
 
     bazel mobile-install app
+
+## Thanks
+
+I borrowed this skeleton app from [sbt-android](https://github.com/scala-android/sbt-android)

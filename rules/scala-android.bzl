@@ -54,7 +54,7 @@ def scala_android_library(
         deps = java_deps,
         visibility = visibility,
         exports = [
-            "@scala//:scala-library"
+            "//external:io_bazel_rules_scala/dependency/scala/scala_library"
         ],
     )
 

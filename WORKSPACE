@@ -18,8 +18,6 @@ git_repository(
 load('@gmaven_rules//:gmaven.bzl', 'gmaven_rules')
 gmaven_rules()
 
-load("@bazel_tools//tools/build_defs/repo:maven_rules.bzl", "maven_aar")
-
 android_sdk_repository(
   name = "androidsdk",
   api_level = 27,
